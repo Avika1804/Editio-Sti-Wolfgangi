@@ -98,17 +98,17 @@ MODUS-105iii = vii-a
 MODUS-106i = iv_-e
 MODUS-106ii = c-c2
 MODUS-106iii = iii-a2
-MODUS-109 = i-f vii-c2
+MODUS-109 = i-f iii-a vii-c2
 MODUS-110 = iv-g
 MODUS-111 = iv-a
-MODUS-112 = iv-e2 vii-c
+MODUS-112 = iv-e2 iv-A_ vii-c
 MODUS-113 = per
 MODUS-114 = i-g2
 MODUS-115 = viii-A
 MODUS-116 = viii-A
 MODUS-117 = vi-F
-MODUS-121 = iii-e
-MODUS-126 = viii-G
+MODUS-121 = iii-e viii-G
+MODUS-126 = i-f viii-G
 MODUS-128 = ii-D
 MODUS-129 = viii-A
 MODUS-130 = e
@@ -131,7 +131,7 @@ MODUS-144i = viii-A
 MODUS-144ii = vii-c2
 MODUS-145 = iv-E
 MODUS-146 = viii-A
-MODUS-147 = iv-e2 e
+MODUS-147 = iii-a iv-e2 e
 MODUS-148 = i-a i-f ii-D iv-E v-g vi-F viii-G
 MODUS-149 = i-a i-f ii-D iv-E v-g vi-F viii-G
 MODUS-150 = i-a i-f ii-D iv-E v-g vi-F viii-G
@@ -145,7 +145,7 @@ MODUS-moysis2i = vi-F
 MODUS-moysis = e
 MODUS-nuncdimittis = iii-a
 MODUS-benedictus = i-g5 isoll-D isoll-D_ isoll-f isoll-g iisoll-D ivsoll-E vi-F visoll-C vii-a viisoll-a viisoll-d viii-G viiisoll-G 
-MODUS-magnificat = i-g isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iiisoll-a ivsoll-A ivsoll-d ivsoll-E ivsoll-E2 v-a vsoll-g vii-c visoll-C visoll-F viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2
+MODUS-magnificat = i-g isoll-a isoll-D isoll-D2 isoll-f isoll-g ii-D iiisoll-a iv-d ivsoll-A ivsoll-d ivsoll-E ivsoll-E2 v-a vsoll-g vii-c visoll-C visoll-F viisoll-a viisoll-d viii-G viii-G2 viiisoll-C viiisoll-g viiisoll-G viiisoll-G2
 include $(PSALMTONES_DIR)/tonus.mk
 CANTICIS = isaiae ezechiae anna moysis habacuc moysis2i moysis2ii nuncdimittis dan3
 MODUSLIST = $(sort $(foreach P,$(PSALMS) benedictus magnificat $(CANTICIS),$(MODUS-$(P))))
@@ -222,7 +222,8 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 			  simileestregnumcaelorumgrano supermurostuos amendicovobisquianon \
 			  nonenimvosestis cantantibusorganis estsecretumvaleriane \
 			  caeciliafamulatua expansismanibusorabat triduanasadomino \
-			  virgogloriosasemper) \
+			  virgogloriosasemper inodorem istaestspeciosainter manumsuamaperuit \
+			  venielectameaet dumessetrex iamhiemstransiit) \
 	 $(addprefix hym-TeLucis-,feria minor dominica major solemnis bmv) \
 	 $(patsubst %,hym-%-aestivalis,AEternaCaeli AlesDiei CaeliDeus ImmenseCaeli LucisCreator \
 				       LuxEcce MagnaeDeus NoxEtTenebrae OLuxBeata SplendorPaternae \
@@ -232,22 +233,23 @@ SCORES = $(addprefix ant-,alleluia1 alleluia2 ampliuslavame atimore aviroiniquo 
 				     TellurisIngens) \
 	 $(addprefix hym-,EcceJamNoctis AEterneRerum AveMarisStella OGloriosaDomina AdPrecesNostras \
 			  ChristeLuxVera AmorisSensusErige AdestoChriste SalveDies \
-			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt JesuCoronaVirginum) \
+			  VitaSanctorum QuemTerra OGloriosaFemina QuemTerra-alt JesuCoronaVirginum \
+			  FortemVirili) \
 	 $(addprefix resp-,benedicamdominum inclinacormeum magnusdominusnoster quammagnificata \
-			   sanaanimammeam avemaria inmanus specietua) \
+			   sanaanimammeam avemaria inmanus specietua adiuvabiteam) \
 	 $(addprefix deusinadiutorium-,solemnis alter communis) \
 	 $(addprefix capitulum-,Benedictio BenedictusDeus NoxPraecessit OAltitudo AbInitio \
-				FratresQuiGloriatur tuautem) \
+				FratresQuiGloriatur tuautem MulieremFortem) \
 	 $(addprefix versus-,custodi gaude dirigatur dominusregnavit repleti vespertina \
 			     diffusa cognoscantquia deusnesileas exaltentdominum laudabonomen \
 			     medianocte memorfui praevenerunt psallitedomino sacrificiumlaudis \
 			     benedictatu diffusa-tq) \
 	 $(addprefix oratio,1 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 5pe 6pe 24 bmv \
-			    -franciscus -caecilia) \
+			    -franciscus -caecilia -birgitta) \
 	 supplicatiolitaniae oratiodominica oratiodominica-mat \
 	 dominusvobiscum-solemnis domineexaudi domineexaudi-simplex \
 	 $(addprefix benedicamus-,feria-laudes feria-vesperae minor officium-bmv dominica-perannum \
-				  duplexmajus-vesperae) \
+				  duplexmajus-vesperae duplex-vesperae) \
 	 $(addprefix inv-,alleluiachristumdominum regemmagnum dominumquifecit adoremusdominum \
 			  dominumdeum veniteexsultemus jubilemusdeo avemaria) \
 	 dominelabiamea \
@@ -326,7 +328,7 @@ include $(iter)
 define iter-doit
 $(TMP_DIR)/%.gtex: $(i)/%.gabc ; if $(GREP) -q ^nabc-lines: $$<; then $(SED) -e ':d;s/\(([^).]*\)\./\1/g;/([^)]*\./bd' $$<; else $(CAT) $$<; fi | $(SED) -e 's/<sp>\([AVR]\)\/<\/sp>\./<v>\\\1bardot{}<\/v>/g;s/†/ +/g;:d;s/\(([^)'\'']*\)'\''/\1/g;/([^)]*'\''/bd' | $(SED) -e ':d;s/\(\(^\|)\)[^(j]*\)j/\1i/g;s/\(\(^\|)\)[^(J]*\)J/\1I/g;td' | $(GREGORIO) -s -o $$@
 endef
-iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PerAnnum ../Agnetis ../Quadragesimae
+iter-left := . $(TMP_DIR) $(addprefix $(COMMON_CHANTS_DIR)/,kyriale76 amon33 arom12 lcantualis78) $(PSALMTONES_DIR) ../DominicaTemporePaschali ../OctavaPaschae ../Epiphania/cantus/grom61 ../Pentecostes ../AscensioneDomini ../InNativitateBMV/cantus/amon33 ../CorpusChristi ../InNativitateBMV/cantus/nrom02 ../PerAnnum ../Agnetis ../Quadragesimae ../MariaeMagdalenae
 include $(iter)
 
 FERIAE = ii iii iv v vi
@@ -336,7 +338,7 @@ PDFII = $(foreach H,$(HEBDOMADAE),sabbato-$(H).pdf)
 PDFIII = $(foreach H,$(HEBDOMADAE),dominica-$(H).pdf)
 PDFIV = $(foreach H,$(HEBDOMADAE),$(patsubst %,vferia%-$(H).pdf,$(FERIAE)))
 PDFV = $(foreach H,$(HEBDOMADAE),vdominica-$(H).pdf)
-PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII) $(PDFIV) $(PDFV) caeciliae.pdf
+PDF = completorium.pdf $(PDFI) $(PDFII) $(PDFIII) $(PDFIV) $(PDFV) caeciliae.pdf birgittae.pdf
 all: $(PDF)
 define iter-doit
 $(patsubst %.pdf,%.tex,$(i)): feria$(word 1,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex hebdomada$(word 2,$(subst -, ,$(patsubst feria%.pdf,%,$(i)))).tex ; touch $$@
